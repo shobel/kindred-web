@@ -22,7 +22,11 @@
 
   <!-- Hero -->
   <section class="hero">
-    <div class="hero-parallax-bg"></div>
+    <div class="hero-parallax-bg">
+      <div class="hero-blob hero-blob-1"></div>
+      <div class="hero-blob hero-blob-2"></div>
+      <div class="hero-blob hero-blob-3"></div>
+    </div>
     <div class="container hero-content-wrap">
       <h1>Built around <em>your</em> child.<br>Not a generic one.</h1>
       <p class="hero-sub">
@@ -188,7 +192,7 @@
       <div class="science-inner">
         <div>
           <div class="section-label">Grounded in science</div>
-          <h2>Built on child development research. Not vibes.</h2>
+          <h2>Built on child development research.</h2>
           <div class="science-points">
             <div class="science-point">
               <div class="science-dot"></div>
@@ -229,9 +233,9 @@
       <div class="science-inner">
         <div>
           <div class="section-label">Why now</div>
-          <h2>Every other industry already benefits from this.</h2>
+          <h2>Every other industry has been transformed by personalized AI. Parenting hasn't. Until now.</h2>
           <p class="section-sub" style="margin-top: 16px;">
-            Machine learning has transformed how doctors diagnose, how teachers personalize instruction, how financial advisors plan — by finding patterns in individual data that no human could track alone. Parenting is the one area that hasn't caught up. Kindred changes that.
+            AI has transformed how doctors diagnose, how teachers personalize instruction, how financial advisors plan — by finding patterns in individual data that no human could track alone. Parenting is the one area that hasn't caught up. Kindred changes that.
           </p>
         </div>
         <div class="science-card">
@@ -280,13 +284,6 @@
     </div>
   </footer>
 
-  <script>
-    const parallaxBg = document.querySelector('.hero-parallax-bg');
-    window.addEventListener('scroll', () => {
-      const scrolled = window.scrollY;
-      parallaxBg.style.transform = `translateY(${scrolled * 0.45}px)`;
-    }, { passive: true });
-  </script>
 
 </body>
 </html>
