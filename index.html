@@ -22,8 +22,8 @@
 
   <!-- Hero -->
   <section class="hero">
-    <div class="container">
-      <div class="hero-eyebrow">AI-powered parenting guidance</div>
+    <div class="hero-parallax-bg"></div>
+    <div class="container hero-content-wrap">
       <h1>Built around <em>your</em> child.<br>Not a generic one.</h1>
       <p class="hero-sub">
         Kindred learns your child's specific challenges, personality, and history — then gives you coaching that actually fits your family.
@@ -223,6 +223,37 @@
     </div>
   </section>
 
+  <!-- AI section -->
+  <section style="background: var(--cream-dark);">
+    <div class="container">
+      <div class="science-inner">
+        <div>
+          <div class="section-label">Why now</div>
+          <h2>Every other industry already benefits from this.</h2>
+          <p class="section-sub" style="margin-top: 16px;">
+            Machine learning has transformed how doctors diagnose, how teachers personalize instruction, how financial advisors plan — by finding patterns in individual data that no human could track alone. Parenting is the one area that hasn't caught up. Kindred changes that.
+          </p>
+        </div>
+        <div class="science-card">
+          <div style="display:flex;flex-direction:column;gap:20px;">
+            <div style="border-bottom:1px solid var(--cream-dark);padding-bottom:20px;">
+              <div style="font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-secondary);margin-bottom:6px;">Medicine</div>
+              <div style="font-size:15px;font-weight:700;color:var(--text);">AI catches patterns across thousands of cases to personalize your diagnosis.</div>
+            </div>
+            <div style="border-bottom:1px solid var(--cream-dark);padding-bottom:20px;">
+              <div style="font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-secondary);margin-bottom:6px;">Education</div>
+              <div style="font-size:15px;font-weight:700;color:var(--text);">Adaptive learning platforms adjust in real time to how each student learns.</div>
+            </div>
+            <div>
+              <div style="font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:0.08em;color:var(--gold-dark);margin-bottom:6px;">Parenting — with Kindred</div>
+              <div style="font-size:15px;font-weight:700;color:var(--text);">Guidance that learns your child and gets smarter every time you use it.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA -->
   <section class="cta-section">
     <div class="container">
@@ -248,6 +279,14 @@
       <p class="footer-copy">© 2026 Kindred. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    const parallaxBg = document.querySelector('.hero-parallax-bg');
+    window.addEventListener('scroll', () => {
+      const scrolled = window.scrollY;
+      parallaxBg.style.transform = `translateY(${scrolled * 0.45}px)`;
+    }, { passive: true });
+  </script>
 
 </body>
 </html>
