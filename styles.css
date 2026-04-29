@@ -226,15 +226,45 @@ nav {
 
 /* ── Phone screenshots ── */
 .mockup-section {
-  padding: 20px 0 80px;
+  padding: 80px 0;
   display: flex;
+  align-items: center;
   justify-content: center;
+  gap: 80px;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.mockup-text {
+  flex: 1;
+  max-width: 420px;
+}
+
+.mockup-phones {
+  display: flex;
   align-items: flex-end;
   gap: 20px;
+  flex-shrink: 0;
+}
+
+.mockup-phone-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.mockup-caption {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-align: center;
 }
 
 .phone-frame {
-  width: 200px;
+  width: 180px;
   flex-shrink: 0;
   background: var(--text);
   border-radius: 36px;
@@ -242,8 +272,8 @@ nav {
   box-shadow: 0 40px 80px rgba(0,0,0,0.18), 0 8px 24px rgba(0,0,0,0.10);
 }
 
-.phone-frame:first-child {
-  transform: translateY(28px);
+.mockup-phone-raised {
+  transform: translateY(-28px);
 }
 
 .phone-screenshot {
@@ -253,9 +283,13 @@ nav {
   display: block;
 }
 
-@media (max-width: 520px) {
-  .mockup-section { gap: 12px; }
-  .phone-frame { width: 44vw; border-radius: 8vw; padding: 2vw; }
+@media (max-width: 780px) {
+  .mockup-section { flex-direction: column; gap: 40px; }
+  .mockup-text { max-width: 100%; text-align: center; }
+}
+
+@media (max-width: 420px) {
+  .phone-frame { width: 40vw; border-radius: 8vw; padding: 2vw; }
   .phone-screenshot { border-radius: 6.5vw; }
 }
 
