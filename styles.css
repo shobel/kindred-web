@@ -57,7 +57,8 @@ nav {
   color: var(--text);
 }
 
-.logo span { color: var(--gold-dark); }
+.logo-text { color: var(--text); }
+.logo-text span { color: var(--gold-dark); }
 
 .nav-icon {
   width: 30px;
