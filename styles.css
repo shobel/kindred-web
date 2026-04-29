@@ -213,137 +213,31 @@ nav {
   color: var(--text-secondary);
 }
 
-/* ── Phone mockup ── */
+/* ── Phone screenshots ── */
 .mockup-section {
   padding: 20px 0 80px;
   display: flex;
   justify-content: center;
+  align-items: flex-end;
+  gap: 24px;
 }
 
 .phone-frame {
-  width: 260px;
+  width: 240px;
   background: var(--text);
   border-radius: 40px;
-  padding: 12px;
-  box-shadow: 0 40px 80px rgba(0,0,0,0.18), 0 8px 24px rgba(0,0,0,0.10);
-  position: relative;
-}
-
-.phone-screen {
-  background: var(--cream);
-  border-radius: 30px;
-  overflow: hidden;
-  aspect-ratio: 9/19;
-  display: flex;
-  flex-direction: column;
-}
-
-.phone-notch {
-  width: 80px;
-  height: 24px;
-  background: var(--text);
-  border-radius: 0 0 16px 16px;
-  margin: 0 auto;
-}
-
-.phone-content {
-  padding: 16px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.phone-greeting {
-  font-size: 11px;
-  font-weight: 800;
-  color: var(--text);
-}
-
-.phone-card {
-  background: white;
-  border-radius: 14px;
-  padding: 12px;
-}
-
-.phone-card-label {
-  font-size: 8px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--text-secondary);
-  margin-bottom: 4px;
-}
-
-.phone-card-title {
-  font-size: 10px;
-  font-weight: 800;
-  color: var(--text);
-  margin-bottom: 6px;
-}
-
-.phone-progress {
-  display: flex;
-  gap: 3px;
-  margin-bottom: 4px;
-}
-
-.phone-progress-bar {
-  flex: 1;
-  height: 4px;
-  background: var(--cream-dark);
-  border-radius: 2px;
-}
-.phone-progress-bar.filled { background: var(--gold-dark); }
-
-.phone-bite {
-  background: var(--gold-subtle);
-  border-radius: 12px;
   padding: 10px;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.18), 0 8px 24px rgba(0,0,0,0.10);
 }
 
-.phone-bite-label {
-  font-size: 7px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--gold-dark);
-  margin-bottom: 4px;
+.phone-frame:first-child {
+  transform: translateY(24px);
 }
 
-.phone-bite-text {
-  font-size: 9px;
-  font-weight: 700;
-  color: var(--text);
-  line-height: 1.4;
-}
-
-.phone-chat {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.phone-bubble {
-  max-width: 80%;
-  padding: 7px 10px;
-  border-radius: 12px;
-  font-size: 8px;
-  line-height: 1.4;
-}
-
-.phone-bubble.user {
-  background: var(--text);
-  color: white;
-  align-self: flex-end;
-  border-bottom-right-radius: 3px;
-}
-
-.phone-bubble.ai {
-  background: white;
-  color: var(--text);
-  align-self: flex-start;
-  border-bottom-left-radius: 3px;
+.phone-screenshot {
+  width: 100%;
+  border-radius: 32px;
+  display: block;
 }
 
 /* ── Section shared ── */
