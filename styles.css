@@ -220,6 +220,18 @@ nav {
   flex-wrap: wrap;
 }
 
+.badge-wrap {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.yeti-face {
+  width: 90px;
+  display: block;
+}
+
 .store-badge {
   display: inline-block;
   transition: transform 0.15s, box-shadow 0.15s;
