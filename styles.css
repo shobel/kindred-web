@@ -284,45 +284,17 @@ nav {
 /* ── Yeti decorations ── */
 .yeti {
   position: absolute;
+  bottom: 0;
   pointer-events: none;
   user-select: none;
   filter: drop-shadow(0 4px 16px rgba(0,0,0,0.10));
 }
 
-.yeti-hero {
-  width: 120px;
-  bottom: -10px;
-  left: 64px;
-  transform: rotate(-8deg);
-}
-
-.yeti-benefits {
-  width: 100px;
-  bottom: -10px;
-  right: 48px;
-  transform: rotate(6deg);
-}
-
-.yeti-how {
-  width: 100px;
-  bottom: -10px;
-  left: 60px;
-  transform: rotate(-6deg);
-}
-
-.yeti-features {
-  width: 100px;
-  bottom: -10px;
-  right: 60px;
-  transform: rotate(8deg);
-}
-
-.yeti-bites {
-  width: 90px;
-  bottom: -10px;
-  left: 48px;
-  transform: rotate(-10deg);
-}
+.yeti-hero { width: 120px; left: 64px; }
+.yeti-benefits { width: 100px; right: 48px; }
+.yeti-how { width: 100px; left: 60px; }
+.yeti-features { width: 100px; right: 60px; }
+.yeti-bites { width: 90px; left: 48px; }
 
 .cta-yeti {
   width: 80px;
