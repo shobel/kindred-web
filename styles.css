@@ -103,7 +103,6 @@ nav {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  text-align: center;
   position: relative;
   overflow: hidden;
 }
@@ -167,6 +166,17 @@ nav {
 .hero-content-wrap {
   position: relative;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  width: 100%;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 0;
 }
 
 .hero-eyebrow {
@@ -183,12 +193,11 @@ nav {
 }
 
 .hero h1 {
-  font-size: clamp(36px, 6vw, 64px);
+  font-size: clamp(36px, 5vw, 60px);
   font-weight: 900;
   line-height: 1.1;
   letter-spacing: -1.5px;
-  max-width: 820px;
-  margin: 0 auto 20px;
+  margin: 0 0 20px;
 }
 
 .hero h1 em {
@@ -199,15 +208,14 @@ nav {
 .hero-sub {
   font-size: clamp(16px, 2vw, 19px);
   color: var(--text-secondary);
-  max-width: 540px;
-  margin: 0 auto 36px;
+  max-width: 480px;
+  margin: 0 0 36px;
   line-height: 1.65;
 }
 
 .hero-actions {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 14px;
   flex-wrap: wrap;
 }
@@ -225,31 +233,20 @@ nav {
   color: var(--text-secondary);
 }
 
-/* ── Phone screenshots ── */
-.mockup-section {
-  padding: 80px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 80px;
-  max-width: 1080px;
-  margin: 0 auto;
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
-.mockup-text {
-  flex: 1;
-  max-width: 420px;
-}
-
-.mockup-phones {
+/* ── Hero phones ── */
+.hero-phones {
   display: flex;
   align-items: flex-end;
   gap: 20px;
   flex-shrink: 0;
+  padding-bottom: 28px;
 }
 
+.hero-phones .phone-frame {
+  width: 210px;
+}
+
+/* ── Phone frames (shared) ── */
 .mockup-phone-wrap {
   display: flex;
   flex-direction: column;
@@ -284,14 +281,54 @@ nav {
   display: block;
 }
 
-@media (max-width: 780px) {
-  .mockup-section { flex-direction: column; gap: 40px; }
-  .mockup-text { max-width: 100%; text-align: center; }
+/* ── Yeti decorations ── */
+.yeti {
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  filter: drop-shadow(0 4px 16px rgba(0,0,0,0.10));
 }
 
-@media (max-width: 420px) {
-  .phone-frame { width: 40vw; border-radius: 8vw; padding: 2vw; }
-  .phone-screenshot { border-radius: 6.5vw; }
+.yeti-hero {
+  width: 120px;
+  bottom: -10px;
+  left: 64px;
+  transform: rotate(-8deg);
+}
+
+.yeti-benefits {
+  width: 100px;
+  bottom: -10px;
+  right: 48px;
+  transform: rotate(6deg);
+}
+
+.yeti-how {
+  width: 100px;
+  bottom: -10px;
+  left: 60px;
+  transform: rotate(-6deg);
+}
+
+.yeti-features {
+  width: 100px;
+  bottom: -10px;
+  right: 60px;
+  transform: rotate(8deg);
+}
+
+.yeti-bites {
+  width: 90px;
+  bottom: -10px;
+  left: 48px;
+  transform: rotate(-10deg);
+}
+
+.cta-yeti {
+  width: 80px;
+  display: block;
+  margin: 0 auto 20px;
+  filter: drop-shadow(0 4px 20px rgba(255,255,255,0.15));
 }
 
 /* ── Section shared ── */
@@ -324,6 +361,8 @@ h2 {
 /* ── Benefits ── */
 .benefits {
   background: var(--cream-dark);
+  position: relative;
+  overflow: hidden;
 }
 
 .benefits-grid {
@@ -392,6 +431,11 @@ h2 {
 }
 
 /* ── How it works ── */
+.how-section {
+  position: relative;
+  overflow: hidden;
+}
+
 .how-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -427,6 +471,12 @@ h2 {
 }
 
 /* ── Features ── */
+.features-section {
+  background: var(--cream-dark);
+  position: relative;
+  overflow: hidden;
+}
+
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -461,6 +511,8 @@ h2 {
 /* ── Bites spotlight ── */
 .bites {
   background: var(--gold-subtle);
+  position: relative;
+  overflow: hidden;
 }
 
 .bites-inner {
@@ -645,8 +697,26 @@ footer {
 }
 
 /* ── Responsive ── */
+@media (max-width: 860px) {
+  .hero-content-wrap {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .hero-sub { max-width: 100%; }
+  .hero-actions { justify-content: center; }
+  .hero-phones { justify-content: center; }
+  .hero-phones .phone-frame { width: 160px; }
+  .yeti-hero { width: 80px; left: 12px; }
+}
+
 @media (max-width: 600px) {
-  .hero { min-height: 100svh; padding: 0; }
+  .hero { min-height: 100svh; }
   section { padding: 60px 0; }
   .how-card, .feature-card { padding: 24px; }
+  .hero-phones .phone-frame { width: 36vw; border-radius: 8vw; padding: 2vw; }
+  .phone-screenshot { border-radius: 6.5vw; }
+  .yeti { display: none; }
 }
