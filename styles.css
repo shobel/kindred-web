@@ -1,21 +1,29 @@
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 :root {
-  --cream: #FAF6EE;
-  --cream-dark: #EDE8DC;
-  --gold: #E8B800;
-  --gold-dark: #A07A00;
-  --gold-subtle: #FBF3D0;
-  --text: #2D2A24;
-  --text-secondary: #7A6E5E;
-  --card: #FFFFFF;
+  --cream: #faf6ee;
+  --cream-dark: #ede8dc;
+  --gold: #e8b800;
+  --gold-dark: #a07a00;
+  --gold-subtle: #fbf3d0;
+  --text: #2d2a24;
+  --text-secondary: #7a6e5e;
+  --card: #ffffff;
   --radius: 20px;
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   background: var(--cream);
   color: var(--text);
   line-height: 1.6;
@@ -57,8 +65,12 @@ nav {
   color: var(--text);
 }
 
-.logo-text { color: var(--text); }
-.logo-text span { color: var(--gold-dark); }
+.logo-text {
+  color: var(--text);
+}
+.logo-text span {
+  color: var(--gold-dark);
+}
 
 .nav-icon {
   width: 30px;
@@ -72,19 +84,26 @@ nav {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-weight: 700;
   font-size: 15px;
   border-radius: 50px;
   padding: 12px 24px;
   text-decoration: none;
-  transition: transform 0.15s, box-shadow 0.15s;
+  transition:
+    transform 0.15s,
+    box-shadow 0.15s;
   cursor: pointer;
   border: none;
 }
 
-.btn:hover { transform: translateY(-1px); box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
-.btn:active { transform: translateY(0); }
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+.btn:active {
+  transform: translateY(0);
+}
 
 .btn-primary {
   background: var(--text);
@@ -96,7 +115,10 @@ nav {
   color: var(--text);
 }
 
-.btn-sm { padding: 9px 18px; font-size: 14px; }
+.btn-sm {
+  padding: 9px 18px;
+  font-size: 14px;
+}
 
 /* ── Hero ── */
 .hero {
@@ -149,18 +171,30 @@ nav {
 }
 
 @keyframes blobDrift1 {
-  from { transform: translate(0, 0); }
-  to   { transform: translate(280px, 80px); }
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(280px, 80px);
+  }
 }
 
 @keyframes blobDrift2 {
-  from { transform: translate(0, 0); }
-  to   { transform: translate(-240px, -60px); }
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-240px, -60px);
+  }
 }
 
 @keyframes blobDrift3 {
-  from { transform: translate(0, 0); }
-  to   { transform: translate(160px, -90px); }
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(160px, -90px);
+  }
 }
 
 .hero-content-wrap {
@@ -228,16 +262,24 @@ nav {
 }
 
 .yeti-face {
-  width: 90px;
+  width: 120px;
   display: block;
 }
 
 .store-badge {
   display: inline-block;
-  transition: transform 0.15s, box-shadow 0.15s;
+  transition:
+    transform 0.15s,
+    box-shadow 0.15s;
 }
-.store-badge:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.12); }
-.store-badge img { height: 48px; border-radius: 10px; }
+.store-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+.store-badge img {
+  height: 60px;
+  border-radius: 10px;
+}
 
 .hero-note {
   margin-top: 16px;
@@ -279,7 +321,9 @@ nav {
   background: var(--text);
   border-radius: 36px;
   padding: 9px;
-  box-shadow: 0 40px 80px rgba(0,0,0,0.18), 0 8px 24px rgba(0,0,0,0.10);
+  box-shadow:
+    0 40px 80px rgba(0, 0, 0, 0.18),
+    0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 .mockup-phone-raised {
@@ -299,24 +343,41 @@ nav {
   bottom: 0;
   pointer-events: none;
   user-select: none;
-  filter: drop-shadow(0 4px 16px rgba(0,0,0,0.10));
+  filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.1));
 }
 
-.yeti-hero { width: 120px; left: 64px; }
-.yeti-benefits { width: 100px; right: 48px; }
-.yeti-how { width: 100px; left: 60px; }
-.yeti-features { width: 100px; right: 60px; }
-.yeti-bites { width: 90px; left: 48px; }
+.yeti-hero {
+  width: 120px;
+  left: 64px;
+}
+.yeti-benefits {
+  width: 100px;
+  right: 48px;
+}
+.yeti-how {
+  width: 100px;
+  left: 60px;
+}
+.yeti-features {
+  width: 100px;
+  right: 60px;
+}
+.yeti-bites {
+  width: 90px;
+  left: 48px;
+}
 
 .cta-yeti {
   width: 80px;
   display: block;
   margin: 0 auto 20px;
-  filter: drop-shadow(0 4px 20px rgba(255,255,255,0.15));
+  filter: drop-shadow(0 4px 20px rgba(255, 255, 255, 0.15));
 }
 
 /* ── Section shared ── */
-section { padding: 80px 0; }
+section {
+  padding: 80px 0;
+}
 
 .section-label {
   font-size: 12px;
@@ -384,9 +445,13 @@ h2 {
   color: white;
 }
 
-.truth h2 { color: white; }
+.truth h2 {
+  color: white;
+}
 
-.truth .section-label { color: var(--gold); }
+.truth .section-label {
+  color: var(--gold);
+}
 
 .truth-grid {
   display: grid;
@@ -396,7 +461,7 @@ h2 {
 }
 
 .truth-item {
-  border-top: 2px solid rgba(255,255,255,0.15);
+  border-top: 2px solid rgba(255, 255, 255, 0.15);
   padding-top: 24px;
 }
 
@@ -410,7 +475,7 @@ h2 {
 
 .truth-item p {
   font-size: 15px;
-  color: rgba(255,255,255,0.65);
+  color: rgba(255, 255, 255, 0.65);
   line-height: 1.65;
 }
 
@@ -507,7 +572,10 @@ h2 {
 }
 
 @media (max-width: 720px) {
-  .bites-inner { grid-template-columns: 1fr; gap: 40px; }
+  .bites-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
 }
 
 .bites-cards {
@@ -520,7 +588,7 @@ h2 {
   background: white;
   border-radius: 16px;
   padding: 20px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
 
 .bite-card-tag {
@@ -550,7 +618,9 @@ h2 {
 }
 
 @media (max-width: 720px) {
-  .science-inner { grid-template-columns: 1fr; }
+  .science-inner {
+    grid-template-columns: 1fr;
+  }
 }
 
 .science-points {
@@ -591,7 +661,7 @@ h2 {
   background: var(--card);
   border-radius: var(--radius);
   padding: 36px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
 }
 
 .quote-mark {
@@ -625,10 +695,14 @@ h2 {
   color: white;
 }
 
-.cta-section h2 { color: white; max-width: 600px; margin: 0 auto 16px; }
+.cta-section h2 {
+  color: white;
+  max-width: 600px;
+  margin: 0 auto 16px;
+}
 
 .cta-section p {
-  color: rgba(255,255,255,0.65);
+  color: rgba(255, 255, 255, 0.65);
   font-size: 17px;
   margin-bottom: 36px;
 }
@@ -636,7 +710,7 @@ h2 {
 /* ── Footer ── */
 footer {
   background: var(--text);
-  border-top: 1px solid rgba(255,255,255,0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   padding: 32px 0;
 }
 
@@ -665,16 +739,18 @@ footer {
 
 .footer-links a {
   font-size: 14px;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
   transition: color 0.15s;
 }
 
-.footer-links a:hover { color: white; }
+.footer-links a:hover {
+  color: white;
+}
 
 .footer-copy {
   font-size: 13px;
-  color: rgba(255,255,255,0.35);
+  color: rgba(255, 255, 255, 0.35);
   width: 100%;
   text-align: center;
   margin-top: 8px;
@@ -689,18 +765,44 @@ footer {
     padding-top: 40px;
     padding-bottom: 60px;
   }
-  .hero-sub { max-width: 100%; }
-  .hero-actions { justify-content: center; }
-  .hero-phones { justify-content: center; }
-  .hero-phones .phone-frame { width: 160px; }
-  .yeti-hero { width: 80px; left: 12px; }
+  .hero-sub {
+    max-width: 100%;
+  }
+  .hero-actions {
+    justify-content: center;
+  }
+  .hero-phones {
+    justify-content: center;
+  }
+  .hero-phones .phone-frame {
+    width: 160px;
+  }
+  .yeti-hero {
+    width: 80px;
+    left: 12px;
+  }
 }
 
 @media (max-width: 600px) {
-  .hero { min-height: 100svh; }
-  section { padding: 60px 0; }
-  .how-card, .feature-card { padding: 24px; }
-  .hero-phones .phone-frame { width: 36vw; border-radius: 8vw; padding: 2vw; }
-  .phone-screenshot { border-radius: 6.5vw; }
-  .yeti { display: none; }
+  .hero {
+    min-height: 100svh;
+  }
+  section {
+    padding: 60px 0;
+  }
+  .how-card,
+  .feature-card {
+    padding: 24px;
+  }
+  .hero-phones .phone-frame {
+    width: 36vw;
+    border-radius: 8vw;
+    padding: 2vw;
+  }
+  .phone-screenshot {
+    border-radius: 6.5vw;
+  }
+  .yeti {
+    display: none;
+  }
 }
