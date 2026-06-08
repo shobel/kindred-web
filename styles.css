@@ -213,6 +213,7 @@ nav {
   opacity: 0.5;
   border-width: 5px;
   border-color: var(--gold-dark);
+  background: radial-gradient(circle, #ffca00 100%);
 }
 
 .hero-arc-4 {
