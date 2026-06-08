@@ -163,9 +163,9 @@ nav {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(circle, var(--gold) 1px, transparent 1px);
-  background-size: 32px 32px;
-  opacity: 0.12;
+  background-image: radial-gradient(circle, var(--gold-dark) 1.5px, transparent 1.5px);
+  background-size: 28px 28px;
+  opacity: 0.25;
   pointer-events: none;
   z-index: 0;
 }
@@ -178,12 +178,11 @@ nav {
   z-index: 1;
 }
 
-/* Concentric arcs — bolder color */
+/* Concentric arcs — bold and visible */
 .hero-arc {
   position: absolute;
   border-radius: 50%;
   border: 2px solid var(--gold);
-  opacity: 0.12;
 }
 
 .hero-arc-1 {
@@ -191,7 +190,7 @@ nav {
   height: 900px;
   right: -250px;
   top: -150px;
-  opacity: 0.14;
+  opacity: 0.25;
   border-color: var(--gold);
   border-width: 2px;
 }
@@ -201,7 +200,7 @@ nav {
   height: 700px;
   right: -150px;
   top: -50px;
-  opacity: 0.2;
+  opacity: 0.35;
   border-width: 3px;
   border-color: var(--gold);
 }
@@ -211,8 +210,8 @@ nav {
   height: 500px;
   right: -50px;
   top: 50px;
-  opacity: 0.3;
-  border-width: 4px;
+  opacity: 0.5;
+  border-width: 5px;
   border-color: var(--gold-dark);
 }
 
@@ -221,8 +220,8 @@ nav {
   height: 600px;
   right: -100px;
   top: 0;
-  background: radial-gradient(circle, var(--gold) 0%, transparent 70%);
-  opacity: 0.12;
+  background: radial-gradient(circle, var(--gold) 0%, transparent 65%);
+  opacity: 0.2;
   border: none;
 }
 
