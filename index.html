@@ -27,113 +27,339 @@
             >kind<span>red</span></span
           >
         </div>
+        <div class="nav-links">
+          <a href="#ages-toddler" class="nav-link">Toddlers</a>
+          <a href="#ages-kid" class="nav-link">Kids</a>
+          <a href="#ages-preteen" class="nav-link">Preteens</a>
+          <a href="#features" class="nav-link">Features</a>
+        </div>
         <a href="#download" class="btn btn-primary btn-sm">Download</a>
       </div>
     </nav>
 
     <!-- Hero -->
     <section class="hero">
-      <div class="hero-parallax-bg">
-        <div class="hero-blob hero-blob-1"></div>
-        <div class="hero-blob hero-blob-2"></div>
-        <div class="hero-blob hero-blob-3"></div>
+      <div class="hero-bg">
+        <div class="hero-arc hero-arc-1"></div>
+        <div class="hero-arc hero-arc-2"></div>
+        <div class="hero-arc hero-arc-3"></div>
+        <div class="hero-arc hero-arc-4"></div>
       </div>
       <div class="container hero-content-wrap">
         <div class="hero-text">
-          <h1>Meet your <em>24/7</em><br />parenting coach.</h1>
+          <div class="hero-eyebrow">Beyond the baby phase</div>
+          <h1>Parenting gets harder.<br/><em>Now you have a coach.</em></h1>
           <p class="hero-sub">
-            Kindred learns your child's specific challenges, personality, and
-            history — so you always know how to respond with calm and
-            confidence.
+            Kindred learns your child's specific patterns, temperament, and triggers —
+            then gives you adaptive strategies that work at every level. Not generic tips.
+            Real guidance for <em>your</em> kid.
           </p>
           <div class="hero-actions" id="download">
-            <div class="badge-wrap">
-              <img
-                src="yeti-simple-face-t.png"
-                class="yeti-face"
-                alt=""
-                aria-hidden="true"
-              />
-              <a
-                href="https://apps.apple.com/app/id6762741594"
-                class="store-badge"
-              >
-                <img
-                  src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-                  alt="Download on the App Store"
-                />
-              </a>
-            </div>
+            <a
+              href="https://apps.apple.com/app/id6762741594"
+              class="btn btn-primary btn-lg"
+            >
+              Download Free
+            </a>
+            <span class="hero-platform">iOS &nbsp;&#183;&nbsp; Free to start</span>
           </div>
-          <p class="hero-note">Free to download &nbsp;·&nbsp; iOS</p>
         </div>
         <div class="hero-phones">
-          <div class="mockup-phone-wrap">
-            <div class="phone-frame">
+          <div class="hero-phone-stack">
+            <div class="phone-frame phone-back">
               <img
-                src="home.png"
+                src="screenshots/ai-chat.PNG"
+                alt="Kindred AI chat"
+                class="phone-screenshot"
+              />
+            </div>
+            <div class="phone-frame phone-front">
+              <img
+                src="screenshots/home-growth-areas.PNG"
                 alt="Kindred home screen"
                 class="phone-screenshot"
               />
             </div>
-            <p class="mockup-caption">Track your child's progress</p>
           </div>
-          <div class="mockup-phone-wrap">
-            <div class="phone-frame mockup-phone-raised">
-              <img
-                src="chat.png"
-                alt="Kindred chat screen"
-                class="phone-screenshot"
-              />
+        </div>
+      </div>
+      <!-- Media bar -->
+      <div class="media-bar">
+        <div class="container">
+          <p class="media-bar-label">Built for the phase no one talks about</p>
+          <div class="media-bar-stats">
+            <div class="stat-item">
+              <span class="stat-number">2-14</span>
+              <span class="stat-label">Age range</span>
             </div>
-            <p class="mockup-caption">Get guidance in the moment</p>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">24/7</span>
+              <span class="stat-label">AI coaching</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">2 parents</span>
+              <span class="stat-label">Co-parent sync</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">Adaptive</span>
+              <span class="stat-label">Learns your child</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Benefits -->
-    <section class="benefits">
+    <!-- Find your stage -->
+    <section class="stages-section" id="stages">
       <div class="container">
-        <div class="benefits-grid">
-          <div class="benefit-item">
-            <div class="benefit-icon">🔍</div>
-            <h3>Understand your child and know how to respond</h3>
-            <p>
-              Kindred builds a picture of your child over time — their wiring,
-              their triggers, their patterns — so nothing feels like a mystery.
-            </p>
+        <div class="section-label">Find your stage</div>
+        <h2>One app. Every stage<br/>after the baby phase.</h2>
+        <p class="section-sub">
+          There are a million apps for tracking feeds and diapers. But once your kid has opinions,
+          emotions, and meltdowns in the grocery store — you're on your own. Until now.
+        </p>
+
+        <div class="stages-grid">
+          <a href="#ages-toddler" class="stage-card" id="ages-toddler">
+            <div class="stage-age">Ages 2-4</div>
+            <h3>Toddlers</h3>
+            <p>Tantrums, boundary testing, big emotions they can't name yet. The stage where every day feels like a negotiation.</p>
+            <div class="stage-challenges">
+              <span class="challenge-tag">Meltdowns</span>
+              <span class="challenge-tag">Defiance</span>
+              <span class="challenge-tag">Sleep battles</span>
+              <span class="challenge-tag">Sharing</span>
+            </div>
+          </a>
+          <a href="#ages-kid" class="stage-card stage-card-accent" id="ages-kid">
+            <div class="stage-age">Ages 5-9</div>
+            <h3>Kids</h3>
+            <p>School anxiety, friendship drama, lying, homework battles. The stage where the problems get more complex — and the stakes feel higher.</p>
+            <div class="stage-challenges">
+              <span class="challenge-tag">Anxiety</span>
+              <span class="challenge-tag">School refusal</span>
+              <span class="challenge-tag">Anger</span>
+              <span class="challenge-tag">Lying</span>
+            </div>
+          </a>
+          <a href="#ages-preteen" class="stage-card" id="ages-preteen">
+            <div class="stage-age">Ages 10-14</div>
+            <h3>Preteens</h3>
+            <p>Pulling away, emotional walls, peer pressure, screens. The stage where they need you most but act like they don't.</p>
+            <div class="stage-challenges">
+              <span class="challenge-tag">Withdrawal</span>
+              <span class="challenge-tag">Screen time</span>
+              <span class="challenge-tag">Peer pressure</span>
+              <span class="challenge-tag">Identity</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="how-section">
+      <div class="container">
+        <div class="section-label">How Kindred works</div>
+        <h2>A coach that actually<br />knows your child.</h2>
+        <p class="section-sub">
+          The more you use Kindred, the more it understands — building a picture
+          of your child that shapes every piece of guidance it gives.
+        </p>
+
+        <div class="how-steps">
+          <div class="how-step">
+            <div class="how-step-content">
+              <div class="how-number">01</div>
+              <h3>Tell Kindred what's hard</h3>
+              <p>
+                Describe what you're seeing — tantrums, anxiety, defiance, sleep struggles.
+                Kindred helps you understand what's really going on underneath the behavior.
+              </p>
+            </div>
+            <div class="how-step-phone">
+              <div class="phone-frame">
+                <img src="screenshots/child-profile.PNG" alt="Child profile" class="phone-screenshot" />
+              </div>
+            </div>
           </div>
-          <div class="benefit-item">
-            <div class="benefit-icon">🧘</div>
-            <h3>Handle daily challenges with calm and confidence</h3>
-            <p>
-              Whether it's a meltdown at pickup or a rough bedtime, you'll
-              always have a thoughtful response ready — not just a reaction.
-            </p>
+
+          <div class="how-step how-step-reverse">
+            <div class="how-step-content">
+              <div class="how-number">02</div>
+              <h3>Get strategies that actually fit</h3>
+              <p>
+                Not a wall of tips. Kindred builds adaptive strategies at two levels —
+                macro shifts that change long-term dynamics, and micro scripts for what to say
+                in the next 30 seconds.
+              </p>
+            </div>
+            <div class="how-step-phone">
+              <div class="phone-frame">
+                <img src="screenshots/strategy-detail.PNG" alt="Strategy detail" class="phone-screenshot" />
+              </div>
+            </div>
           </div>
-          <div class="benefit-item">
-            <div class="benefit-icon">🌱</div>
-            <h3>Build your child's lifelong regulation skills</h3>
-            <p>
-              The strategies Kindred gives you aren't just for today. They're
-              grounded in how children develop — building real skills that last.
-            </p>
+
+          <div class="how-step">
+            <div class="how-step-content">
+              <div class="how-number">03</div>
+              <h3>Chat when it matters most</h3>
+              <p>
+                Had a hard moment? Not sure how to handle what just happened?
+                Your AI coach knows your child's full history and is ready
+                whenever you need to think things through.
+              </p>
+            </div>
+            <div class="how-step-phone">
+              <div class="phone-frame">
+                <img src="screenshots/ai-chat.PNG" alt="AI chat" class="phone-screenshot" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <img
-        src="yetis-gold/yeti-trophy.png"
-        class="yeti yeti-benefits"
-        alt=""
-        aria-hidden="true"
-      />
+    </section>
+
+    <!-- What changes -->
+    <section class="changes-section">
+      <div class="container">
+        <div class="section-label">What changes</div>
+        <h2>How this shows up in your home.</h2>
+        <p class="section-sub">
+          You're solving today's problem in a way that helps you and your kid feel more capable tomorrow.
+        </p>
+
+        <div class="changes-grid">
+          <div class="change-card">
+            <div class="change-number">01</div>
+            <h3>The hard moments don't make you spiral</h3>
+            <p>You have a framework — not a random tip. When chaos hits, you know what to do next.</p>
+          </div>
+          <div class="change-card">
+            <div class="change-number">02</div>
+            <h3>Your kid starts building the skills</h3>
+            <p>Resilience, accountability, independence — not because you went soft, but because you held the boundary and the connection.</p>
+          </div>
+          <div class="change-card change-card-accent">
+            <div class="change-number">03</div>
+            <h3>You trust yourself as a parent</h3>
+            <p>Not because it got easy. Because you stopped needing it to be.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-label">Everything in one place</div>
+        <h2>One app for your whole<br/>parenting journey.</h2>
+
+        <div class="feature-row">
+          <div class="feature-content">
+            <span class="feature-badge">AI Coach</span>
+            <h3>A thinking partner, not a chatbot</h3>
+            <p>
+              Kindred's AI knows your child's history, growth areas, and what you've already tried.
+              It connects dots across conversations — noticing patterns you haven't seen yet.
+            </p>
+          </div>
+          <div class="feature-phone">
+            <div class="phone-frame">
+              <img src="screenshots/ai-chat.PNG" alt="AI chat" class="phone-screenshot" />
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-row feature-row-reverse">
+          <div class="feature-content">
+            <span class="feature-badge">Skill Building</span>
+            <h3>Real milestones, not busywork</h3>
+            <p>
+              Set mastery-based goals with observable milestones that build on each other.
+              Track your child's progress on the things that actually matter — not "practice patience for 30 days."
+            </p>
+          </div>
+          <div class="feature-phone">
+            <div class="phone-frame">
+              <img src="screenshots/skillbuilding.PNG" alt="Skill building" class="phone-screenshot" />
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-row">
+          <div class="feature-content">
+            <span class="feature-badge">Co-Parenting</span>
+            <h3>Same page, without the recap</h3>
+            <p>
+              Both parents share the same strategies, growth tracking, and journal.
+              Alignment happens naturally instead of through exhausting 11pm conversations.
+            </p>
+          </div>
+          <div class="feature-phone">
+            <div class="phone-frame">
+              <img src="screenshots/home-growth-areas.PNG" alt="Growth areas" class="phone-screenshot" />
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-row feature-row-reverse">
+          <div class="feature-content">
+            <span class="feature-badge">Journal</span>
+            <h3>Capture the moments that matter</h3>
+            <p>
+              The funny things they said, the hard days you got through, the breakthroughs worth remembering.
+              Private by default. Never touched by AI. Exportable always.
+            </p>
+          </div>
+          <div class="feature-phone">
+            <div class="phone-frame">
+              <img src="screenshots/journal.PNG" alt="Journal" class="phone-screenshot" />
+            </div>
+          </div>
+        </div>
+
+        <div class="features-mini-grid">
+          <div class="feature-mini">
+            <div class="feature-mini-icon">
+              <img src="favicon.png" alt="" />
+            </div>
+            <h4>Growth Areas</h4>
+            <p>Track the specific challenges your child is working through. See what's shifting over time.</p>
+          </div>
+          <div class="feature-mini">
+            <div class="feature-mini-icon">
+              <img src="favicon.png" alt="" />
+            </div>
+            <h4>Daily Insights</h4>
+            <p>Two fresh cards daily — child psychology insights specific to your child's challenges.</p>
+          </div>
+          <div class="feature-mini">
+            <div class="feature-mini-icon">
+              <img src="favicon.png" alt="" />
+            </div>
+            <h4>Article Library</h4>
+            <p>Curated deep-dives on the topics that matter most to your family right now.</p>
+          </div>
+          <div class="feature-mini">
+            <div class="feature-mini-icon">
+              <img src="favicon.png" alt="" />
+            </div>
+            <h4>Community Events</h4>
+            <p>Find family-friendly events near you. Because connection happens offline too.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Truth -->
     <section class="truth">
       <div class="container">
-        <div class="section-label">The problem with parenting advice</div>
+        <div class="section-label">The problem</div>
         <h2>Generic tips don't work<br />for specific kids.</h2>
 
         <div class="truth-grid">
@@ -154,165 +380,19 @@
             </p>
           </div>
           <div class="truth-item">
-            <h3>You shouldn't have to piece it together alone.</h3>
+            <h3>Information isn't the problem.</h3>
             <p>
-              Between school, work, and just living — there's no time to read a
-              parenting library. You need answers for this moment, not a reading
-              list.
+              You don't need more tips. You need simplified, focused
+              frameworks that actually drive change — adapted to your child,
+              not a hypothetical one.
             </p>
           </div>
         </div>
       </div>
-    </section>
-
-    <!-- How it works -->
-    <section class="how-section">
-      <div class="container">
-        <div class="section-label">How Kindred works</div>
-        <h2>A coach that actually<br />knows your child.</h2>
-        <p class="section-sub">
-          The more you use Kindred, the more it understands — building a picture
-          of your child that shapes every piece of guidance it gives.
-        </p>
-
-        <div class="how-grid">
-          <div class="how-card">
-            <div class="how-number">01</div>
-            <h3>Name what's hard</h3>
-            <p>
-              Tell Kindred what challenges you're seeing — tantrums, anxiety,
-              defiance, sleep struggles. It helps you understand what's really
-              going on underneath.
-            </p>
-          </div>
-          <div class="how-card">
-            <div class="how-number">02</div>
-            <h3>Get a strategy that fits</h3>
-            <p>
-              Kindred builds a tailored approach for your child — grounded in
-              child development science, specific to their age, temperament, and
-              patterns.
-            </p>
-          </div>
-          <div class="how-card">
-            <div class="how-number">03</div>
-            <h3>Chat when you need it most</h3>
-            <p>
-              Had a hard moment? Not sure how to handle something? Your AI coach
-              knows your child's history and is ready when you need to think
-              things through.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="yetis-gold/yeti-juggle.png"
-        class="yeti yeti-how"
-        alt=""
-        aria-hidden="true"
-      />
-    </section>
-
-    <!-- Features -->
-    <section class="features-section">
-      <div class="container">
-        <div class="section-label">Everything you need</div>
-        <h2>One place for your<br />whole parenting journey.</h2>
-
-        <div class="features-grid">
-          <div class="feature-card">
-            <span class="feature-icon">🧠</span>
-            <h3>AI Chat Coach</h3>
-            <p>
-              A coach that knows your child's history, growth areas, and what
-              you've already tried. Not a generic chatbot — a real thinking
-              partner for the hard moments.
-            </p>
-          </div>
-          <div class="feature-card">
-            <span class="feature-icon">🌱</span>
-            <h3>Growth Areas</h3>
-            <p>
-              Track the specific challenges your child is working through.
-              Kindred maps the patterns, measures progress, and adjusts
-              strategies as your child grows.
-            </p>
-          </div>
-          <div class="feature-card">
-            <span class="feature-icon">📓</span>
-            <h3>Journal</h3>
-            <p>
-              Capture observations, moments, and breakthroughs. Your notes feed
-              into Kindred's understanding — and become a record you'll actually
-              want to look back on.
-            </p>
-          </div>
-          <div class="feature-card">
-            <span class="feature-icon">👥</span>
-            <h3>Co-Parenting</h3>
-            <p>
-              Share access with your partner so you're both working from the
-              same understanding. Same strategies, same language, same approach
-              — even on different days.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="yetis-gold/yeti-cape.png"
-        class="yeti yeti-features"
-        alt=""
-        aria-hidden="true"
-      />
-    </section>
-
-    <!-- Daily Bites spotlight -->
-    <section class="bites">
-      <div class="container">
-        <div class="bites-inner">
-          <div>
-            <div class="section-label">Daily Bites</div>
-            <h2>Learn something new about your kid every day.</h2>
-            <p class="section-sub" style="margin-top: 16px">
-              Two fresh cards, delivered daily. Not generic parenting tips —
-              child psychology insights specific to your child's challenges. The
-              kind of thing that makes you think "I never knew that."
-            </p>
-          </div>
-
-          <div class="bites-cards">
-            <div class="bite-card">
-              <div class="bite-card-tag">For Liam · Tantrums</div>
-              <p>
-                Entitlement usually comes from frustration intolerance, not
-                being spoiled — Liam needs small frustrations to land, not be
-                rescued from them.
-              </p>
-            </div>
-            <div class="bite-card">
-              <div class="bite-card-tag">For Mia · Anxiety</div>
-              <p>
-                Reassurance feels helpful but often backfires — each "it'll be
-                fine" teaches Mia her worry signal can't be trusted.
-              </p>
-            </div>
-            <div class="bite-card">
-              <div class="bite-card-tag">Child development</div>
-              <p>Boredom is the precursor to creativity. Sit with it.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="yetis-gold/yeti-party.png"
-        class="yeti yeti-bites"
-        alt=""
-        aria-hidden="true"
-      />
     </section>
 
     <!-- Science -->
-    <section>
+    <section class="science-section">
       <div class="container">
         <div class="science-inner">
           <div>
@@ -332,10 +412,10 @@
               <div class="science-point">
                 <div class="science-dot"></div>
                 <div>
-                  <h4>Behavior as communication</h4>
+                  <h4>Adaptive, not static</h4>
                   <p>
-                    Kindred is built on the principle that children's behavior
-                    always makes sense — once you understand what's driving it.
+                    Strategies evolve as Kindred learns more about your child.
+                    What worked at 3 won't work at 7 — Kindred knows that.
                   </p>
                 </div>
               </div>
@@ -364,23 +444,47 @@
       </div>
     </section>
 
+    <!-- Testimonial -->
+    <section class="testimonial-section">
+      <div class="container">
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>"I used to spiral in hard moments. Now I have a framework and I actually trust myself to handle it."</p>
+            <cite>Parent of a 4-year-old</cite>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>"The co-parent feature alone is worth it. My partner and I are finally on the same page without the nightly debriefs."</p>
+            <cite>Parent of two kids, 6 &amp; 8</cite>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>"Every parenting app I've tried was for babies. Kindred is the first one that actually helps with the hard stuff that comes after."</p>
+            <cite>Parent of a 10-year-old</cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- CTA -->
     <section class="cta-section">
       <div class="container">
-        <img
-          src="yetis-gold/yeti-king.png"
-          class="cta-yeti"
-          alt=""
-          aria-hidden="true"
-        />
-        <h2>Start parenting with confidence today.</h2>
-        <p>Free to download. 24/7 support tailored to your child.</p>
-        <a href="https://apps.apple.com/app/id6762741594" class="store-badge">
-          <img
-            src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-            alt="Download on the App Store"
-          />
-        </a>
+        <div class="cta-inner">
+          <div class="cta-phones">
+            <div class="phone-frame">
+              <img src="screenshots/home-growth-areas.PNG" alt="Kindred app" class="phone-screenshot" />
+            </div>
+          </div>
+          <div class="cta-content">
+            <h2>Start parenting with<br/>clarity and confidence.</h2>
+            <p>Free to download. 24/7 support tailored to your child.</p>
+            <a href="https://apps.apple.com/app/id6762741594" class="btn btn-gold btn-lg">
+              Download Free
+            </a>
+            <span class="cta-note">iOS &nbsp;&#183;&nbsp; Free to start</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -396,7 +500,7 @@
         </ul>
       </div>
       <div class="footer-inner">
-        <p class="footer-copy">© 2026 Kindred. All rights reserved.</p>
+        <p class="footer-copy">&copy; 2026 Kindred. All rights reserved.</p>
       </div>
     </footer>
   </body>
