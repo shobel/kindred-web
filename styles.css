@@ -501,12 +501,43 @@ h2 {
   flex-direction: column;
   gap: 80px;
   margin-top: 60px;
+  position: relative;
+}
+
+/* Vertical connector line with dots */
+.how-connector {
+  position: absolute;
+  left: 50%;
+  top: 60px;
+  bottom: 60px;
+  width: 2px;
+  transform: translateX(-50%);
+  z-index: 0;
+  pointer-events: none;
+}
+.connector-line {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent, var(--gold), var(--gold), transparent);
+  opacity: 0.3;
+}
+.connector-dot {
+  position: absolute;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 16px rgba(196, 164, 105, 0.5);
 }
 
 .how-step {
   display: flex;
   align-items: center;
   gap: 60px;
+  position: relative;
+  z-index: 1;
 }
 
 .how-step-reverse {
@@ -519,10 +550,40 @@ h2 {
 
 .how-step-phone {
   flex-shrink: 0;
+  position: relative;
+}
+
+/* Decorative rings behind phone */
+.how-step-phone::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 280px;
+  height: 280px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  opacity: 0.12;
+  pointer-events: none;
+}
+.how-step-phone::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 340px;
+  height: 340px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(196, 164, 105, 0.08) 0%, transparent 70%);
+  pointer-events: none;
 }
 
 .how-step-phone .phone-frame {
   width: 220px;
+  position: relative;
+  z-index: 1;
 }
 
 .how-number {
@@ -531,6 +592,21 @@ h2 {
   color: var(--cream-dark);
   line-height: 1;
   margin-bottom: 12px;
+  position: relative;
+}
+
+/* Subtle glow behind the step number */
+.how-number::after {
+  content: attr(data-num);
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 56px;
+  font-weight: 900;
+  color: var(--gold);
+  opacity: 0.08;
+  filter: blur(12px);
+  pointer-events: none;
 }
 
 .how-step-content h3 {
@@ -950,6 +1026,10 @@ footer {
 
   .features-mini-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .how-connector {
+    display: none;
   }
 
   .how-step,
