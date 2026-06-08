@@ -490,6 +490,176 @@ h2 {
   border-radius: 50px;
 }
 
+/* ── Age detail sections ── */
+.age-detail {
+  position: relative;
+  overflow: hidden;
+}
+
+.age-detail:nth-child(odd) {
+  background: var(--cream);
+}
+
+.age-detail-inner {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.age-detail-reverse {
+  flex-direction: row-reverse;
+}
+
+.age-detail-text {
+  flex: 1;
+}
+
+.age-badge {
+  display: inline-block;
+  background: var(--gold-subtle);
+  color: var(--gold-dark);
+  font-size: 13px;
+  font-weight: 800;
+  padding: 6px 16px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 20px;
+}
+
+.age-detail-text h2 {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+  margin-bottom: 16px;
+}
+
+.age-detail-text > p {
+  font-size: 17px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 480px;
+  margin-bottom: 32px;
+}
+
+.age-detail-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.age-detail-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.age-detail-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.age-detail-list li strong {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--text);
+}
+
+.age-detail-list li span {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.age-detail-visual {
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.age-detail-ring {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.age-detail-ring::after {
+  content: '';
+  position: absolute;
+  inset: -30px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(196, 164, 105, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.age-detail-visual .phone-frame {
+  width: 240px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Toddler accent color */
+.age-detail-toddler .age-badge {
+  background: #fce4d6;
+  color: #c45d2c;
+}
+.age-detail-toddler .age-detail-list li::before {
+  background: #e07a3f;
+}
+.age-detail-toddler .age-detail-ring {
+  border-color: #e07a3f;
+}
+.age-detail-toddler .age-detail-ring::after {
+  background: radial-gradient(circle, rgba(224, 122, 63, 0.1) 0%, transparent 70%);
+}
+
+/* Kid accent color */
+.age-detail-kid .age-badge {
+  background: #dbeafe;
+  color: #2563eb;
+}
+.age-detail-kid .age-detail-list li::before {
+  background: #3b82f6;
+}
+.age-detail-kid .age-detail-ring {
+  border-color: #3b82f6;
+}
+.age-detail-kid .age-detail-ring::after {
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+}
+
+/* Teen accent color */
+.age-detail-teen .age-badge {
+  background: #ede9fe;
+  color: #7c3aed;
+}
+.age-detail-teen .age-detail-list li::before {
+  background: #8b5cf6;
+}
+.age-detail-teen .age-detail-ring {
+  border-color: #8b5cf6;
+}
+.age-detail-teen .age-detail-ring::after {
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
+}
+
 /* ── How it works ── */
 .how-section {
   position: relative;
@@ -1068,6 +1238,8 @@ footer {
     display: none;
   }
 
+  .age-detail-inner,
+  .age-detail-reverse,
   .how-step,
   .how-step-reverse,
   .feature-row,
@@ -1077,9 +1249,14 @@ footer {
     text-align: center;
   }
 
+  .age-detail-text > p,
   .how-step-content p,
   .feature-content p {
     max-width: 100%;
+  }
+
+  .age-detail-list {
+    text-align: left;
   }
 
   .science-inner {
