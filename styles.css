@@ -698,10 +698,40 @@ h2 {
 
 .feature-phone {
   flex-shrink: 0;
+  position: relative;
+}
+
+/* Decorative rings behind feature phones */
+.feature-phone::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 280px;
+  height: 280px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  opacity: 0.12;
+  pointer-events: none;
+}
+.feature-phone::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 340px;
+  height: 340px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(196, 164, 105, 0.08) 0%, transparent 70%);
+  pointer-events: none;
 }
 
 .feature-phone .phone-frame {
   width: 220px;
+  position: relative;
+  z-index: 1;
 }
 
 .feature-badge {
@@ -746,9 +776,15 @@ h2 {
 }
 
 .feature-mini-icon {
-  width: 36px;
-  height: 36px;
+  width: 48px;
+  height: 48px;
   margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--gold-subtle);
+  border-radius: 12px;
+  color: var(--gold-dark);
 }
 
 .feature-mini-icon img {
