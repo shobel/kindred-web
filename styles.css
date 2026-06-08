@@ -851,11 +851,81 @@ h2 {
   overflow: hidden;
 }
 
+/* Large decorative arcs in features background */
+.features-section::before {
+  content: '';
+  position: absolute;
+  top: -200px;
+  right: -300px;
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  opacity: 0.1;
+  pointer-events: none;
+}
+.features-section::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  left: -200px;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  border: 2px solid var(--gold);
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+/* Brighter rings on darker bg */
+.features-section .feature-phone::before {
+  opacity: 0.22;
+  border-width: 2px;
+  border-color: var(--gold);
+  box-shadow: 0 0 40px rgba(196, 164, 105, 0.12);
+}
+.features-section .feature-phone::after {
+  background: radial-gradient(circle, rgba(196, 164, 105, 0.14) 0%, transparent 70%);
+}
+
+.feature-rows-wrap {
+  position: relative;
+}
+
+.feature-connector {
+  position: absolute;
+  left: 50%;
+  top: 80px;
+  bottom: 80px;
+  width: 2px;
+  transform: translateX(-50%);
+  z-index: 0;
+  pointer-events: none;
+}
+.feature-connector .connector-line {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent, var(--gold), var(--gold), transparent);
+  opacity: 0.25;
+}
+.feature-connector .connector-dot {
+  position: absolute;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 12px rgba(196, 164, 105, 0.4);
+}
+
 .feature-row {
   display: flex;
   align-items: center;
   gap: 60px;
   margin-top: 60px;
+  position: relative;
+  z-index: 1;
 }
 
 .feature-row-reverse {
@@ -1234,7 +1304,8 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .how-connector {
+  .how-connector,
+  .feature-connector {
     display: none;
   }
 
